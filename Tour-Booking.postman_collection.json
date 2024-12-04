@@ -1,0 +1,722 @@
+{
+	"info": {
+		"_postman_id": "c5b1a883-caa1-47e9-9cec-d71560cbbbfe",
+		"name": "Tour-Booking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40141040"
+	},
+	"item": [
+		{
+			"name": "register",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NGVlODUzMDNkODlmZjZmNzhhNDdjNSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzMzMjI0NTkzLCJleHAiOjE3MzQ1MjA1OTN9.oaPEsuksphRw48l0mentNmRX8_A1LZoGhpPnZtIwf2I",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"books\",\r\n    \"email\" : \"books@gmail.com\",\r\n    \"password\" : \"Password\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"books@gmail.com\",\r\n    \"password\" : \"Password\"\r\n\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NGYxNjA5ZWYwNzMyMDIwM2Y5ZGE1NiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzMzMjM2MzI5LCJleHAiOjE3MzQ1MzIzMjl9.W6nv61cqy2nQQid_G1vMobXKTPyOgE37buayL8-t6h0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"New Name\",\r\n  \"email\": \"newemail@example.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/users/ (id)",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						" (id)"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get single user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NGVlODUzMDNkODlmZjZmNzhhNDdjNSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzMzMjI0NTkzLCJleHAiOjE3MzQ1MjA1OTN9.oaPEsuksphRw48l0mentNmRX8_A1LZoGhpPnZtIwf2I",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/users/674dfb9048a3231a4a18d54c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"674dfb9048a3231a4a18d54c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NGYxNjA5ZWYwNzMyMDIwM2Y5ZGE1NiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzMzMjM2MzI5LCJleHAiOjE3MzQ1MzIzMjl9.W6nv61cqy2nQQid_G1vMobXKTPyOgE37buayL8-t6h0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NGYxNjA5ZWYwNzMyMDIwM2Y5ZGE1NiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzMzMjM2MzI5LCJleHAiOjE3MzQ1MzIzMjl9.W6nv61cqy2nQQid_G1vMobXKTPyOgE37buayL8-t6h0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/users/674de3842f4ff176115a9fef",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"674de3842f4ff176115a9fef"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create tour",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NGVlODUzMDNkODlmZjZmNzhhNDdjNSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzMzMjI0NTkzLCJleHAiOjE3MzQ1MjA1OTN9.oaPEsuksphRw48l0mentNmRX8_A1LZoGhpPnZtIwf2I",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"title\": \"Westminister Bridge\",\r\n    \"city\": \"London\",\r\n    \"address\": \"Somewhere in London\",\r\n    \"distance\": 300,\r\n    \"price\": 99,\r\n    \"maxGroupSize\": 10,\r\n    \"desc\": \"this is the description\",\r\n    \"reviews\": [],\r\n    \"hotel\": \"Grand Place Hotel\",\r\n    \"photo\": \"/tour-images/tour-img01.jpg\",\r\n    \"featured\": true\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/tours/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"tours",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update tour",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NGYxNjA5ZWYwNzMyMDIwM2Y5ZGE1NiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzMzMjM2MzI5LCJleHAiOjE3MzQ1MzIzMjl9.W6nv61cqy2nQQid_G1vMobXKTPyOgE37buayL8-t6h0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"River Kwai Hotel\",\r\n    \"city\": \"Kanchanaburi\",\r\n    \"address\": \"284/15 – 16, Saeng Chuto Road, River Kwai, Kanchanaburi\",\r\n    \"distance\": 750,\r\n    \"price\": 1500,\r\n        \"maxGroupSize\": 3,\r\n        \"desc\": \"Experience the natural beauty of River Kwai in Kanchanaburi at the budget-friendly River Kwai Hotel. This exclusive property offers modern comforts like air conditioning, complimentary Wi-Fi, and a refreshing shower. Unwind by the sparkling swimming pool or enjoy a workout at the state-of-the-art fitness center.\",\r\n        \"hotel\": \"River Kwai Hotel\",\r\n        \"photo\": \"https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/99519344.jpg?k=574539a438fb7fbe6f5a3a8133701dd039dc9e2ca457f2d3820bdfbe0c3f6660&o=&s=1024x\"\r\n        \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/tours/674f4ea1bf50219bb07fd020",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"tours",
+						"674f4ea1bf50219bb07fd020"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete tour",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NGYxNjA5ZWYwNzMyMDIwM2Y5ZGE1NiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzMzMjM2MzI5LCJleHAiOjE3MzQ1MzIzMjl9.W6nv61cqy2nQQid_G1vMobXKTPyOgE37buayL8-t6h0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/tours/674ef17d639c95409455bb67",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"tours",
+						"674ef17d639c95409455bb67"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get single tour",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NGVlODUzMDNkODlmZjZmNzhhNDdjNSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzMzMjI0NTkzLCJleHAiOjE3MzQ1MjA1OTN9.oaPEsuksphRw48l0mentNmRX8_A1LZoGhpPnZtIwf2I",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/tours/674f4ea1bf50219bb07fd020",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"tours",
+						"674f4ea1bf50219bb07fd020"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all tours",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/tours",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"tours"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get tour search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/tours/search/getTourBySearch?city=Pat&maxGroupSize=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"tours",
+						"search",
+						"getTourBySearch"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "Pat"
+						},
+						{
+							"key": "maxGroupSize",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "page & limit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/tours?page=1&limit=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"tours"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get featured tours",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NGYxNjA5ZWYwNzMyMDIwM2Y5ZGE1NiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzMzMjM2MzI5LCJleHAiOjE3MzQ1MzIzMjl9.W6nv61cqy2nQQid_G1vMobXKTPyOgE37buayL8-t6h0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/tours/search/getFeaturedTours",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"tours",
+						"search",
+						"getFeaturedTours"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get tour count",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NGYxNjA5ZWYwNzMyMDIwM2Y5ZGE1NiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzMzMjM2MzI5LCJleHAiOjE3MzQ1MzIzMjl9.W6nv61cqy2nQQid_G1vMobXKTPyOgE37buayL8-t6h0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/tours/search/getTourCount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"tours",
+						"search",
+						"getTourCount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create review",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NGYxNjA5ZWYwNzMyMDIwM2Y5ZGE1NiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzMzMjM2MzI5LCJleHAiOjE3MzQ1MzIzMjl9.W6nv61cqy2nQQid_G1vMobXKTPyOgE37buayL8-t6h0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Kim Kong\",\r\n    \"reviewText\": \"This is beautiful\",\r\n    \"rating\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/review/674f4ea1bf50219bb07fd020",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"review",
+						"674f4ea1bf50219bb07fd020"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all reviews",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/review",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"review"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete review",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NGYxNjA5ZWYwNzMyMDIwM2Y5ZGE1NiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzMzMjM2MzI5LCJleHAiOjE3MzQ1MzIzMjl9.W6nv61cqy2nQQid_G1vMobXKTPyOgE37buayL8-t6h0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/review/<tourId>/<reviewId>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"review",
+						"<tourId>",
+						"<reviewId>"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create booking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NGYxNjA5ZWYwNzMyMDIwM2Y5ZGE1NiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzMzMjM2MzI5LCJleHAiOjE3MzQ1MzIzMjl9.W6nv61cqy2nQQid_G1vMobXKTPyOgE37buayL8-t6h0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tourName\": \"Bali, Indonesia\",\r\n    \"fullName\": \"dfsd dfsdf\",\r\n    \"guestSize\": 5,\r\n    \"phone\": 254163977,\r\n    \"bookAt\": \"2024-02-02\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/booking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get single booking",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NGVlODUzMDNkODlmZjZmNzhhNDdjNSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzMzMjI0NTkzLCJleHAiOjE3MzQ1MjA1OTN9.oaPEsuksphRw48l0mentNmRX8_A1LZoGhpPnZtIwf2I",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/booking/67503528e05ad49bd47d6931",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"booking",
+						"67503528e05ad49bd47d6931"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all bookings",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NGVlODUzMDNkODlmZjZmNzhhNDdjNSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzMzMjI0NTkzLCJleHAiOjE3MzQ1MjA1OTN9.oaPEsuksphRw48l0mentNmRX8_A1LZoGhpPnZtIwf2I",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/booking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete booking",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NGYxNjA5ZWYwNzMyMDIwM2Y5ZGE1NiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzMzMjM2MzI5LCJleHAiOjE3MzQ1MzIzMjl9.W6nv61cqy2nQQid_G1vMobXKTPyOgE37buayL8-t6h0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/booking/<bookingId>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"booking",
+						"<bookingId>"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
