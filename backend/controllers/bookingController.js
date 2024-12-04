@@ -47,3 +47,25 @@ export const getAllBooking = async (req, res) => {
     res.status(500).json({ success: true, message: "internal server error" });
   }
 };
+
+// delete booking
+export const deleteBooking = async (req, res) => {
+  const id = req.params.id;
+
+  try {
+    // ลบ booking ตาม id
+    await Booking.findByIdAndDelete(id);
+
+    res.status(200).json({
+      success: true,
+      message: "Booking deleted successfully",
+    });
+  } catch (err) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to delete booking",
+      error: err.message,
+    });
+  }
+};
+

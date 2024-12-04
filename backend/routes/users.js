@@ -13,12 +13,12 @@ import { adminAuth, userAuth } from "../utils/verifyToken.js";
 router.put("/:id", userAuth, updateUser);
 
 // delete user
-router.delete("/:id", adminAuth, deleteUser);
+router.delete("/:id", userAuth, deleteUser);
 
 // get single user
 router.get("/:id", userAuth, getSingleUser);
 
 // get all users
-router.get("/", adminAuth, getAllUser);
+router.get("/", userAuth, getAllUser);
 
 export default router;

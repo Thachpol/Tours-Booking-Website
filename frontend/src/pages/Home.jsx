@@ -31,10 +31,7 @@ const Home = () => {
                   <span className="highlight"> memories</span>
                 </h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Ullam ipsum nobis asperiores soluta voluptas quas voluptates.
-                  Molestiae tempora dignissimos, animi praesentium molestias
-                  perferendis porro expedita delectus. Soluta natus porro.
+                Pack your bags and let the adventure begin, Explore the beauty of the unknown and create memories that will last a lifetime.
                 </p>
               </div>
             </Col>
@@ -87,23 +84,23 @@ const Home = () => {
                   With our all experience <br /> we will serve you
                 </h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Step out of your comfort zone and into the wonders of the world
                   <br />
-                  Quas aliquam, hic tempora inventore suscipit unde.
+                  
                 </p>
               </div>
 
               <div className="counter__wrapper d-flex align-items-center gap-5 ">
                 <div className="counter__box">
-                  <span>12k+</span>
+                  <span>10k+</span>
                   <h6>Successful trip</h6>
                 </div>
                 <div className="counter__box">
-                  <span>2k+</span>
+                  <span>3k+</span>
                   <h6>Regular clients</h6>
                 </div>
                 <div className="counter__box">
-                  <span>15</span>
+                  <span>9</span>
                   <h6>Years experience</h6>
                 </div>
               </div>

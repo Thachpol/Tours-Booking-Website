@@ -38,10 +38,7 @@ const Testimonials = () => {
     <Slider {...settings}>
       <div className="testimonial py-4 px-3">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit,
-          explicabo provident hic distinctio molestias voluptates nobis alias
-          placeat suscipit earum debitis recusandae voluptate illum expedita
-          corrupti aliquid doloribus delectus?
+        Using this website was an absolute breeze. The search filters allowed me to find the perfect accommodation quickly. I loved the transparent pricing and clear cancellation policies, making it a worry-free experience.
         </p>
 
         <div className="d-flex align-items-center gap-4 mt-3">
@@ -54,10 +51,7 @@ const Testimonials = () => {
       </div>
       <div className="testimonial py-4 px-3">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit,
-          explicabo provident hic distinctio molestias voluptates nobis alias
-          placeat suscipit earum debitis recusandae voluptate illum expedita
-          corrupti aliquid doloribus delectus?
+        This site offers a wide variety of accommodations, from budget to luxury. The detailed property descriptions and real guest reviews made choosing a place super easy. Plus, the discounts were a nice bonus for my trip!
         </p>
 
         <div className="d-flex align-items-center gap-4 mt-3">
@@ -70,10 +64,7 @@ const Testimonials = () => {
       </div>
       <div className="testimonial py-4 px-3">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit,
-          explicabo provident hic distinctio molestias voluptates nobis alias
-          placeat suscipit earum debitis recusandae voluptate illum expedita
-          corrupti aliquid doloribus delectus?
+        I was impressed by the simplicity of the booking process. The website is user-friendly, and I found all the details I needed at a glance. My reservation went smoothly, and I had no issues upon check-in. Will definitely use it again!
         </p>
 
         <div className="d-flex align-items-center gap-4 mt-3">
@@ -87,10 +78,7 @@ const Testimonials = () => {
 
       <div className="testimonial py-4 px-3">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit,
-          explicabo provident hic distinctio molestias voluptates nobis alias
-          placeat suscipit earum debitis recusandae voluptate illum expedita
-          corrupti aliquid doloribus delectus?
+        This booking platform has everything a traveler needs—great search features, affordable rates, and responsive customer service. It helped me find the perfect stay and saved me so much time. A must-try for all globetrotters!
         </p>
 
         <div className="d-flex align-items-center gap-4 mt-3">

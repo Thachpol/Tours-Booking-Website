@@ -17,16 +17,16 @@ const router = express.Router();
 router.post("/create", userAuth, createTour);
 
 // // update tour
-// router.put("/:id", adminAuth, updateTour);
+router.put("/:id", userAuth, updateTour);
 
 // // delete tour
-// router.delete("/:id", adminAuth, deleteTour);
+router.delete("/:id", userAuth, deleteTour);
 
 // // get single tour
-// router.get("/:id", getSingleTour);
+router.get("/:id", getSingleTour);
 
 // // get all tours
-router.get("/getall", getAllTour);
+router.get("/", getAllTour);
 
 // Test route for debugging or health check
 router.get("/koko", function (req, res) {
